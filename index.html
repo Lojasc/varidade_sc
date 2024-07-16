@@ -1,1 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="icon" href="https://raw.githubusercontent.com/Lojasc/Loja/main/sloga22.jpg" type="image/jpg">
+    
+   <title>LOJA SC VARIEDADE</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; } 
+h1{
+    text-align:center;
+}
+body {
+    font-size:px;
+    background:green;
+    color:white;
+    text-align:center;
+    
+    
+}
+input {
+    width:100%;
+    height:20px;
+    
+}
+p {
+    background:red;
+    color:white;
+    text-align:center;
+    font-size:12px;
+    margin-up:20px;
+}
+.nome {
+    width:40%;
+    
+    text-align:center;
+    border-radius:10px;
+    align-intem:center;
+}
+.env {
+    background:#aff;
+    width:50%;
+    height:50;
+    border-radius:10px
+}
+.prox  {
+    
+    width:50%;
+    height:40px;
+    text-align:center;
+    background-color:blue;
+    color:white;
+    border-radius:10px;
+    font-size:10px;
+    border:none;
+    outline:none;
+    margin:5px;
+}
+a {
+    border:none;
+    background:green;
+    color:green;
+    outline:none    
+}
+table {
+    font-size:10px;
+    border-radius:10px;
+}
+h {
+    color:gold;
+    font-weight:bold;
+}
+.total {
+    text-align:center;
+    width:25%;
+    color:;
+    border-radius:15%;
+}
+input[type="checkbox"]{
+    display:none;
+}
+img{    
+}
+k {
+    display:none;
+}
+</style>
+</head>
+<body onload="verificarCalcular()" style="text-align: center; background: green;">
+   
+  <img class="ima" src="https://raw.githubusercontent.com/Lojasc/Loja/main/21.jpg" alt="Imagem" style="width: 100%; height: 50px;">
+  <a href="index.html">
+  <h1>
+<p style="text-align: center; font-size: 20px; color: blue">
 
+<b> 🔰KIT CAMA CASAL🔰<br></p></a></h1>
+   
+<label>TOTAL 
+<input class="total" type="text" name="total" id="result" value="R$ 0,00" readonly/>
+
+<div class="counter">Itens Selecionados: <span id="itemCount">0</span></div><br><br></label>
+
+    <input class="nome" type="text" size="18" name="NOME" required placeholder="Nome" id="nome">
+<table border="1">  
+<tr> 
+<td>  <input type="checkbox" id="cam01" name="ch[]" value="198.00">
+  <label for="cam01">
+    <img class="product-img" onclick="alert('ESTAMPA COLORIDA 100% ALGODÃO\nNESSA COMPRA VOCÊ VAI ECONOMIZAR 10%\nPARA PRÓXIMA COMPRA'); this.style.opacity = '0.5';" src="https://raw.githubusercontent.com/Lojasc/Loja/main/cama4.jpg" alt="some" width="80" height="100"><br>
+    <b>R$ 220.90</b><br>
+    <h> Colcha casal aveludada  <k>-></k></h><b><br> 100%poliéster<k>-></k> </b><br><k>Nº 01</k></label>
+
+<td><input type="checkbox" id="cam02" name="ch[]" value="198.00">
+<label for="cam02"><img class="product-img"onclick="alert('ESTAMPA COLORIDA 100% ALGODÃO\nNESSA COMPRA VOCÊ VAI ECONOMIZAR 10%\nPARA PRÓXIMA COMPRA'); this.style.opacity = '0.5';" src="https://raw.githubusercontent.com/Lojasc/Loja/main/cama2.jpg" alt="some" width="82" height="100">   <b>R$ 220.90</b><br>
+    <h> Colcha casal aveludada  <k>-></k></h><b><br> 100%poliéster<k>-></k> </b><br><k>Nº 02</k></label>
+
+<td><input type="checkbox" id="cam03" name="ch[]" value="198.00">
+<label for="cam03"><img class="product-img"onclick="alert('ESTAMPA COLORIDA 100% ALGODÃO\nNESSA COMPRA VOCÊ VAI ECONOMIZAR 10%\nPARA PRÓXIMA COMPRA'); this.style.opacity = '0.5';"  src="https://raw.githubusercontent.com/Lojasc/Loja/main/cama3.jpg" alt="some" width="80" height="100">   <b>R$ 220.90</b><br>
+    <h> Colcha casal aveludada  <k>-></k></h><b><br> 100%poliéster<k>-></k> </b><br><k>Nº 03</k></label>
+
+<td><input type="checkbox" id="cam04" name="ch[]" value="198.00">
+<label for="cam04"><img class="product-img"onclick="alert('ESTAMPA COLORIDA 100% ALGODÃO\nNESSA COMPRA VOCÊ VAI ECONOMIZAR 10%\nPARA PRÓXIMA COMPRA'); this.style.opacity = '0.5';"4  src="https://raw.githubusercontent.com/Lojasc/Loja/main/cama4.jpg" alt="some" width="80" height="100">   <b>R$ 220.90</b><br>
+    <h> Colcha casal aveludada  <k>-></k></h><b><br> 100%poliéster<k>-></k> </b><br><k>Nº 04</k></label>
+    </table>
+    
+<h2 style="color: gold">KIT COBRE LEITOR</h2>
+<table>
+<tr>
+<td><input type="checkbox" id="cam05" name="ch[]" value="324.05">
+<label for="cam05"><img class="product-img" onclick="alert('contém 01 colcha,02 fronhas, 01 rolinho completo, 01 almofada,01 cortina 3,00larg×2,00 de altura\nNESSA COMPRA VOCÊ VAI ECONOMIZAR 10%\nPARA PRÓXIMA COMPRA'); this.style.opacity = '0.5';"  src="https://raw.githubusercontent.com/Lojasc/Loja/main/kit-leitor-01.jpg" alt="some" width="80" height="100"><br><b>R$ 359.90</b><br><h> Kit 7 peças  <k>-></k></h><b><br> 100% Algodao <k>-></k> </b><br><k>Nº 05</k></label>
+
+<td><input type="checkbox" id="cam06" name="ch[]" value="324.06">
+<label for="cam06"><img class="product-img"onclick="alert('contém 01 colcha,02 fronhas, 01 rolinho completo, 01 almofada,01 cortina 3,00larg×2,00 de altura\nNESSA COMPRA VOCÊ VAI ECONOMIZAR 10%\nPARA PRÓXIMA COMPRA');this.style.opacity = '0.5';" src="https://raw.githubusercontent.com/Lojasc/Loja/main/kit-leitor-02.jpg" alt="some" width="80" height="100"><br><b>R$ 359.90</b><br><h> Kit 7 peças para queen  <k>-></k></h><b><br> 100% Algodao <k>-></k> </b><br><k>Nº 06</k></label>
+
+<td><input type="checkbox" id="cam07" name="ch[]" value="324.07">
+<label for="cam07"><img class="product-img"onclick="alert('contém 01 colcha,02 fronhas, 01 rolinho completo, 01 almofada,01 cortina 3,00larg×2,00 de altura\nNESSA COMPRA VOCÊ VAI ECONOMIZAR 10%\nPARA PRÓXIMA COMPRA'); this.style.opacity = '0.5';"  src="https://raw.githubusercontent.com/Lojasc/Loja/main/kit-leitor-03.jpg" alt="some" width="80" height="100"><br><b>R$ 359.90</b><br><h> Kit 7 peças para queen <k>-></k></h><b><br> 100% Algodao <k>-></k> </b><br><k>Nº 07</k></label>
+
+<td><input type="checkbox" id="cam08" name="ch[]" value="324.00">
+<label for="cam08"><img class="product-img"onclick="alert('contém 01 colcha,02 fronhas, 01 rolinho completo, 01 almofada,01 cortina 3,00larg×2,00 de altura\nNESSA COMPRA VOCÊ VAI ECONOMIZAR 10%\nPARA PRÓXIMA COMPRA'); this.style.opacity = '0.5';"  src="https://raw.githubusercontent.com/Lojasc/Loja/main/kit-leitor-04.jpg" alt="some" width="80" height="100"><br><b>R$ 360,00</b><br><h> Kit 7 peças para quenn <k>-></k></h><b><br> 100% Algodao <k>-></k> </b><br><k>Nº 08</k></label>
+
+<tr>
+<td><input type="checkbox" id="cam09" name="ch[]" value="135.09">
+<label for="cam09"><img class="product-img"onclick="alert('ESTAMPA COLORIDA 100% ALGODÃO\nNESSA COMPRA VOCÊ VAI ECONOMIZAR 10%\nPARA PRÓXIMA COMPRA'); this.style.opacity = '0.5';"  src="cam9.jpeg" alt="some" width="80" height="100"><br><b>R$ 150.90</b><br><h> Kit 3 peças luxo provence rozac <k>-></k></h><b><br> 100% Algodao <k>-></k> </b><br><k>Nº 09</k></label>
+
+<td><input type="checkbox" id="cam10" name="ch[]" value="135.10">
+<label for="cam10"><img class="product-img"onclick="alert('ESTAMPA COLORIDA 100% ALGODÃO\nNESSA COMPRA VOCÊ VAI ECONOMIZAR 10%\nPARA PRÓXIMA COMPRA'); this.style.opacity = '0.5';" src="cam10.jpeg" alt="some" width="80" height="100"><br><b>R$ 150.90</b><br><h> Kit 3 peças luxo provence rozac <k>-></k></h><b><br> 100% Algodao <k>-></k> </b><br><k>Nº 10</k></label>
+
+<td><input type="checkbox" id="cam11" name="ch[]" value="135.11">
+<label for="cam11"><img class="product-img"onclick="alert('ESTAMPA COLORIDA 100% ALGODÃO\nNESSA COMPRA VOCÊ VAI ECONOMIZAR 10%\nPARA PRÓXIMA COMPRA'); this.style.opacity = '0.5';"  src="cam11.jpeg" alt="some" width="80" height="100"><br><b>R$ 150.90</b><br><h> Kit 3 peças luxo provence rozac <k>-></k></h><b><br> 100% Algodao <k>-></k> </b><br><k>Nº 11</k></label>
+
+<td><input type="checkbox" id="cam12" name="ch[]" value="135.12">
+<label for="cam12"><img class="product-img"onclick="alert('ESTAMPA COLORIDA 100% ALGODÃO\nNESSA COMPRA VOCÊ VAI ECONOMIZAR 10%\nPARA PRÓXIMA COMPRA'); this.style.opacity = '0.5';"  src="cam12.jpeg" alt="some" width="80" height="100"><br><b>R$ 150.90</b><br><h> Kit 3 peças luxo provence rozac <k>-></k></h><b><br> 100% Algodao <k>-></k> </b><br><k>Nº 12</k></label>
+
+<tr>
+<td><input type="checkbox" id="cam13" name="ch[]" value="135.13">
+<label for="cam13"><img class="product-img"onclick="alert('ESTAMPA COLORIDA 100% ALGODÃO\nNESSA COMPRA VOCÊ VAI ECONOMIZAR 10%\nPARA PRÓXIMA COMPRA'); this.style.opacity = '0.5';"  src="cam13.jpeg" alt="some" width="80" height="100"><br><b>R$ 150.90</b><br><h> Kit 3 peças luxo provence rozac <k>-></k></h><b><br> 100% Algodao <k>-></k> </b><br><k>Nº 13</k></label>
+
+<td><input type="checkbox" id="cam14" name="ch[]" value="135.14">
+<label for="cam14"><img class="product-img"onclick="alert('ESTAMPA COLORIDA 100% ALGODÃO\nNESSA COMPRA VOCÊ VAI ECONOMIZAR 10%\nPARA PRÓXIMA COMPRA'); this.style.opacity = '0.5';"  src="cam14.jpeg" alt="some" width="80" height="100"><br><b>R$ 135.90</b><br><h> Kit 3 peças luxo provence rozac <k>-></k></h><b><br> 100% Algodao <k>-></k> </b><br><k>Nº 14</k></label>
+
+<td><input type="checkbox" id="cam15" name="ch[]" value="135.15">
+<label for="cam15"><img class="product-img"onclick="alert('ESTAMPA COLORIDA 100% ALGODÃO\nNESSA COMPRA VOCÊ VAI ECONOMIZAR 10%\nPARA PRÓXIMA COMPRA'); this.style.opacity = '0.5';"  src="cam15.jpeg" alt="some" width="80" height="100"><br><b>R$ 150.90</b><br><h> Kit 3 peças luxo provence rozac <k>-></k></h><b><br> 100% Algodao <k>-></k> </b><br><k>Nº 15</k></label>
+
+<td><input type="checkbox" id="cam16" name="ch[]" value="135.16">
+<label for="cam16"><img class="product-img"onclick="alert('ESTAMPA COLORIDA 100% ALGODÃO\nNESSA COMPRA VOCÊ VAI ECONOMIZAR 10%\nPARA PRÓXIMA COMPRA'); this.style.opacity = '0.5';"  src="cam16.jpeg" alt="some" width="80" height="100"><br><b>R$ 150.90</b><br><h> Kit 3 peças luxo provence rozac <k>-></k></h><b><br> 100% Algodao <k>-></k> </b><br><k>Nº 16</k></label>
+
+<tr>
+<td><input type="checkbox" id="cam17" name="ch[]" value="135.17">
+<label for="cam17"><img class="product-img"onclick="alert('ESTAMPA COLORIDA 100% ALGODÃO\nNESSA COMPRA VOCÊ VAI ECONOMIZAR 10%\nPARA PRÓXIMA COMPRA'); this.style.opacity = '0.5';"  src="cam17.jpeg" alt="some" width="80" height="100"><br><b>R$ 150.90</b><br><h> Kit 3 peças luxo provence rozac <k>-></k></h><b><br> 100% Algodao <k>-></k> </b><br><k>Nº 17</k></label>
+
+<td><input type="checkbox" id="cam18" name="ch[]" value="135.18">
+<label for="cam18"><img class="product-img"onclick="alert('ESTAMPA COLORIDA 100% ALGODÃO\nNESSA COMPRA VOCÊ VAI ECONOMIZAR 10%\nPARA PRÓXIMA COMPRA'); this.style.opacity = '0.5';"  src="cam18.jpeg" alt="some" width="80" height="100"><br><b>R$ 150.90</b><br><h> Kit 3 peças luxo provence rozac <k>-></k></h><b><br> 100% Algodao <k>-></k> </b><br><k>Nº 18</k></label>
+
+<td><input type="checkbox" id="cam19" name="ch[]" value="135.19">
+<label for="cam19"><img class="product-img"onclick="alert('ESTAMPA COLORIDA 100% ALGODÃO\nNESSA COMPRA VOCÊ VAI ECONOMIZAR 10%\nPARA PRÓXIMA COMPRA'); this.style.opacity = '0.5';"  src="cam00.jpeg" alt="some" width="80" height="100"><br><b>R$ 150.90</b><br><h> Kit 3 peças luxo provence rozac <k>-></k></h><b><br> 100% Algodao <k>-></k> </b><br><k>Nº 19</k></label>
+
+<td><input type="checkbox" id="cam20" name="ch[]" value="145.20">
+<label for="cam20"><img class="product-img"onclick="alert('ESTAMPA COLORIDA 100% ALGODÃO\nNESSA COMPRA VOCÊ VAI ECONOMIZAR 10%\nPARA PRÓXIMA COMPRA');"src="cam20.jpeg" alt="some" width="80" height="100"><br><b>R$ 160.90</b> <br> <h> Kit 3 peças luxo provence rozac <k>-></k></h><b><br> 100% Algodao <k>-></k> </b><br><k>Nº20</k></label>
+
+</table>
+<a href="#" id="whatsappLink">
+<input class="prox" type="button" value="FINALIZAR A COMPRA"></a>
+
+
+<script>
+
+function formatMoney(value) {
+    return value.toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, '$1.');
+}
+
+function calcularTotal() {
+    let checkboxes = document.querySelectorAll('input[name="ch[]"]:checked');
+    let total = Array.from(checkboxes).reduce((acc, checkbox) => acc + parseFloat(checkbox.value), 0);
+    document.getElementById('result').value = "R$ " + formatMoney(total);
+    updateWhatsAppLink();
+}
+
+function updateWhatsAppLink() {
+    let checkboxes = document.querySelectorAll('input[name="ch[]"]:checked');
+    let nome = document.getElementById('nome').value;
+    let total = document.getElementById('result').value;
+    let items = Array.from(checkboxes).map(checkbox => checkbox.nextElementSibling.textContent.trim()).join('\n--------------------------------------------------------\n');
+var chavePix='chave pix 71987444544\n                   SUELI MACIEL SILVA';
+var tutullo ='LOJA SC VARIEDADE';
+var entrega="Esses Perdidos Seram Entregue no prazo maximo de 2 dias apos a data do pagamento";
+
+var endereco = "Caso a retirada nao seja na loja INFORMAR o ENDERECO\nRUA \nBAIRRO\nCEP NOME COMPLETO\n COMPLEMETO\n Nº"
+
+
+let message =                    `          ${tutullo}
+ Nome : ${nome}
+                        Total : ${total}\n
+${items}
+
+               ${chavePix}
+ 
+ ${entrega}
+ 
+ ${endereco}`;
+ 
+              
+    let whatsappLink = `https://wa.me/5571987444544?text=${encodeURIComponent(message)}`;
+
+    document.getElementById('whatsappLink').href = whatsappLink;
+}
+
+document.querySelectorAll('input[name="ch[]"]').forEach(checkbox => {
+    checkbox.addEventListener('change', () => {
+      calcularTotal();
+      toggleOpacity();
+    });
+  });
+
+  // Função para atualizar a contagem de itens selecionados
+  function updateItemCount() {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    let count = 0;
+    checkboxes.forEach(checkbox => {
+      if (checkbox.checked) {
+        count++;
+      }
+    });
+    document.getElementById('itemCount').innerText = count;
+  }
+
+  // Adiciona evento de mudança para todos os checkboxes
+  document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+    checkbox.addEventListener('change', updateItemCount);
+  });
+
+  // Função para alternar a opacidade das imagens
+  function toggleOpacity() {
+    const checkboxes = document.querySelectorAll('input[name="ch[]"]');
+    const images = document.querySelectorAll('.product-img');
+
+    checkboxes.forEach((checkbox, index) => {
+      images[index].style.opacity = checkbox.checked ? '0.4' : '1';
+    });
+  }
+
+  // Chama a função de inicialização para calcular o total e a opacidade
+  calcularTotal();
+</script>
+</body>
+</html> 
